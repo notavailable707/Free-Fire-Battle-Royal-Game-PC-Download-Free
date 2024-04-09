@@ -1,0 +1,41 @@
+Data imported from
+excell sheets
+
+
+
+#q1 : Import Division 01 internal marks as div01
+library(readxl)
+div01 = read_excel("C:/Users/p_khale07/Downloads/Sample Internal Marks SYIT_edit.xlsx",sheet = "Sheet1")
+div01
+
+
+
+r = div01$`Roll. No`
+a = div01$JAVA1
+b = div01$SE1
+c = div01$COST1
+d = div01$ES1
+e = div01$CG1 #(5m)
+
+#q2 : Find out number of students appeared for COST internal exam.
+
+cost_att = length(c)
+cat("\n Total nummber of students attending cost exam : " , cost_att)
+
+
+#q3 :Find number of students passed in Java
+
+java_pass = sum(a>=10)
+cat("\n Total nummber of students passed in java : " , java_pass)
+
+
+#q4 : Roll numbers of students passed in all internal exams
+
+all_clear = sum(a>=10 & b>=10 & c>=10 & d>=10 & e>=10) # "&" represents "and" operator
+cat("\n Total nummber of students passed in all exams : " , all_clear)
+
+
+#q5 : Number of students who arent 'all clear'
+
+fail_count = sum(a<10 | b<10 | c<10 | d<10 | e<10) # "|" represents "or" operator
+cat("\n Total nummber of students passed in all exams : " , fail_count)

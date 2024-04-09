@@ -1,0 +1,8 @@
+Data Frame
+
+subject = c("A","B", "C","D","E")
+internal = c(12,15,07,19,10)
+theory = c(65,55,21,72,50)
+total= internal+theory
+df = data.frame(subject, internal, theory , total) #data.frame() function
+df #prints the table

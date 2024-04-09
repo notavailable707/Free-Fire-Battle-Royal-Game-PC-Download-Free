@@ -1,0 +1,27 @@
+x=c(56, 42, 36, 47,49,42,60,72,63,55)
+y=c(147, 125, 118, 128, 145, 140, 155,160,149,150)
+plot(x, y,
+main = ' scatter plot ',
+xlab = ' x variable',
+ylab = ' y variable')
+
+
+Q.2  Comment correlation between two variables X and Y
+
+
+x=c(56, 42, 36, 47,49,42,60,72,63,55)
+y=c(147, 125, 118, 128, 145, 140, 155,160,149,150)
+r = cor(x,y, method = 'pearson')
+cat(" Karl Pearsons Correlation coefficient r : ", r)
+
+# r > 0 : positive corr.
+# r < 0 : neg corr.
+# r = 0 : no corr.
+
+if (r<0){
+cat(" Variables are negatively correlated with r : ",r )
+}else if (r>0) {
+cat(" \n Variables are positively correlated with r : ",r )
+} else {
+cat("\n Variables are not correlated with r : ",r )
+}

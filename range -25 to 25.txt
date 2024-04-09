@@ -1,0 +1,18 @@
+Q2 Generate 100 observations in the range -25 to 25 , find its mean , median , quartiles, D3, D7, P65 , P82
+
+
+data = sample(-25:25 , size = 100 , replace = T)
+
+cat(" randomly generated data : \n" , data)
+cat(" \n data arranged in ascending order : \n" , sort(data))
+summary(data)
+
+D3 = quantile(data , 0.30)
+D7 = quantile(data , 0.70)
+P65 = quantile(data ,0.65)
+P82 =quantile(data , 0.82)
+
+cat(" \n Third decile (D3) the data given is : ", D3 )
+cat(" \n Seventh decile (D7) of the data given is : ", D7 )
+cat(" \n 65th Percentile (P65) of the data given is : ", P65 )
+cat(" \n 82nd Percentile (P82)of the data given is : ", P82 )

@@ -1,0 +1,6 @@
+Data types.
+typeof(3.14) # typeof() inbuilt function to check data type
+typeof(3L)
+typeof(3+2i)
+typeof("MKS COLLEGE, JUHU")
+typeof(TRUE)

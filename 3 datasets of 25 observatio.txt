@@ -1,0 +1,21 @@
+
+e 3 random datasets of 25 observations b
+
+d1 = sample(1:10,25,T)
+d2 = sample(1:10,25,T)
+d3 = sample(1:10,25,T)
+cat(" Data set 01 : \n ", d1)
+cat(" \n Data set 01 asc order : \n ", sort(d1))
+cat(" \n Data set 02 : \n ", d2)
+cat(" \n Data set 02 asc order : \n ", sort(d2))
+cat(" \n Data set 03 : \n ", d3)
+cat(" \n Data set 03 asc order : \n", sort(d3))
+cat(" \n Standard Deviation of Data set 01 : ", sd(d1))
+cat(" \n Standard Deviation of Data set 02 : ", sd(d2))
+cat(" \n Standard Deviation of Data set 03 : ", sd(d3))
+s1 = moments::skewness(d1)
+s2 = moments::skewness(d2)
+s3 = moments::skewness(d3)
+cat(" \n Skewness of Data set 01 : ", s1)
+cat(" \n Skewness of Data set 02 : ", s2 )
+cat(" \n Skewness of Data set 03 : ", s3)

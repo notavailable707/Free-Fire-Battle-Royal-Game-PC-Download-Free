@@ -1,0 +1,26 @@
+Object types
+There 5 types of objects in R :
+Vectors
+Lists
+Factors
+Matrices
+Data Frames Out of which we will study Vectors, Matrices and Data Frames in detail.
+
+
+
+
+# vectors
+x= c(2,4,6,8,10,12) #c() function will collect elements as a listed group
+x 
+
+y= seq(from=2,to=12,by=2) #seq() function will output a sequence
+y
+
+z = 1:10
+z
+
+r = sample(2:12, size =6 , replace =T) #sample() will generate random sequence of numbers
+r
+
+s = sample(2:12, size =6 , replace =F)
+s

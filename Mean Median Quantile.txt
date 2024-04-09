@@ -1,0 +1,20 @@
+Mean Median Quantile
+
+data = c(-32,-67,88,81,-38,55,66,55,-46,-72,45,-35,92,-54,-41)
+data
+
+me = mean(data)
+md = median(data)
+q1 = quantile(data, 0.25)
+q2 = quantile(data, 0.5)
+q3 = quantile(data, 0.75)
+
+cat(" Mean of the data given is : ", me )
+cat(" \n Median of the data given is : ", md )
+cat(" \n First Quartile of the data given is : ", me )
+cat(" \n Second Quartile of the data given is : ", me )
+
+cat(" \n Third Quartile of the data given is : ", me )
+hist(data,
+col = 'yellow',
+border = 'red')
